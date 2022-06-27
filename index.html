@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>弹跳彩球</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+      <h1>弹跳彩球</h1>
+      <p id="displayScoring">累计得分分数：</p>
+      <button id="start" class="button">开始游戏</button>
+      <canvas id="myCanvas"></canvas>
+   <!-- 弹窗 -->
+   <div id="myModal" class="modal">
+   <!-- 弹窗内容 -->
+     <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="myMoHead">最后得分：</h2>
+        <p id="scores">250</p> 
+        <form id="names">
+           <label for="name">请输入您的姓名：</label>
+           <input id="name" name="name"></input>
+        </form>
+        <p> 历史排名前三名: </p>
+        <table id="history"  border="1";>
+           <tr>
+              <th>姓名</th>
+              <th>得分</th>
+              <th>时间</th>
+           </tr>
+        </table>
+        <br/>
+        <button class="button" id="save">保存</button> 
+        <br/>
+        <button class="button" id="clear">清除历史记录</button>
+     </div>
+   </div>
+   <script src="main.js"></script>
+ </body>
+</html>
